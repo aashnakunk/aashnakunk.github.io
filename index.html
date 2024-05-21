@@ -14,8 +14,8 @@
             color: #333;
         }
         header {
-            background-color: #b0e0e6;
-            color: #333;
+            background-color: #203094;
+            color: #white;
             padding: 2em 0;
         }
         header h1 {
@@ -43,15 +43,16 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-        .project {
-            background: linear-gradient(to bottom, #b0e0e6, #f0f4f8);
-            border: 2px solid #ccc;
+          .project {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 10px;
             padding: 1em;
             margin: 1em;
             width: 300px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
+            backdrop-filter: blur(10px);
         }
         .project:hover {
             transform: scale(1.05);
