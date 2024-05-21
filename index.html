@@ -3,33 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Website</title>
+    <title>Aashna Nitin Kunkolienker</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
+            color: #333;
         }
         header {
-            background-color: #333;
-            color: white;
-            padding: 1em 0;
+            background-color: #b0e0e6;
+            color: #333;
+            padding: 2em 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+        nav {
+            margin: 2em 0;
         }
         nav a {
             margin: 0 1em;
-            color: white;
+            color: #333;
             text-decoration: none;
+            font-weight: bold;
         }
         main {
             padding: 2em;
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project {
+            background-color: #d8bfd8;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 1em;
+            margin: 1em;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Aashna Nitin Kunkolienker</h1>
+        <p>Introduction: A meticulous Computer Science student with moderate experience in optimization projects and a keen interest in computational intelligence.</p>
+        <p>Email: <a href="mailto:aashnakunk@gmail.com">aashnakunk@gmail.com</a></p>
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
@@ -37,7 +75,21 @@
         </nav>
     </header>
     <main>
-        <p>This is a basic website hosted on GitHub Pages.</p>
+        <h2>My Best Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3><a href="https://github.com/aashnakunk/GAN_VIX" target="_blank">GAN VIX</a></h3>
+                <p>Generative Adversarial Networks for VIX time series prediction.</p>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/aashnakunk/STM32_Parkinsons_tremor_detector" target="_blank">STM32 Parkinson's Tremor Detector</a></h3>
+                <p>A wearable device to detect Parkinsonian tremors using an STM32 microcontroller.</p>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/aashnakunk/Pipelined_processor_FiveStage" target="_blank">Pipelined Processor (Five Stage)</a></h3>
+                <p>A simulation of a five-stage pipelined processor to improve instruction throughput.</p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
