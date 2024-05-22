@@ -17,10 +17,28 @@
             background: linear-gradient(to right, #203094, #a5b3f3);
             color: #ffffff;
             padding: 2em 0;
+            position: relative;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
+        }
+        nav {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #6a0dad;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            margin: 0 0.5em;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #b19cd9;
         }
         .section {
             padding: 2em;
@@ -60,13 +78,17 @@
 <body>
     <header>
         <h1>Extracurriculars</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="extracurriculars.html">Extracurriculars</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+        </nav>
     </header>
     <main>
         <div class="section" id="music">
             <h2>MUSIC</h2>
             <div class="video">
-        
-
                 <a href="https://www.youtube.com/watch?v=SsYHKzyvtL8" target="_blank">
                     <img src="https://img.youtube.com/vi/SsYHKzyvtL8/hqdefault.jpg" alt="Interstellar Theme Piano Cover">
                 </a>
@@ -83,7 +105,7 @@
             </div>
             <a class="view-channel" href="https://www.youtube.com/channel/UCK0wt0AS7GmX6WnMOQLnkLg" target="_blank">VIEW CHANNEL ON YOUTUBE</a>
         </div>
-    <div class="section" id="others">
+        <div class="section" id="others">
             <h2>OTHERS</h2>
             <p>Speech and Drama Grade 8 examination from Trinity College of London.</p>
             <p>Several Trinity College exams cleared in Piano, Guitar, Drums, Saxophone, Flute, and Vocals.</p>
