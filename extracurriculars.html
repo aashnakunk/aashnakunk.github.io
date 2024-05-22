@@ -20,9 +20,14 @@
             position: relative;
         }
         nav {
-            background: #6a0dad;
+            background: #2e0854;
             display: flex;
             justify-content: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 0.5em 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         nav a {
             text-decoration: none;
@@ -32,10 +37,15 @@
             transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #b19cd9;
+            background-color: #4b0082;
+        }
+        nav a:not(:last-child)::after {
+            content: "|";
+            color: white;
+            margin: 0 0.5em;
         }
         h1 {
-            font-size: 2em;
+            font-size: 1.5em;
             margin: 1em 0;
             font-family: 'Arial', sans-serif;
         }
@@ -78,11 +88,11 @@
     <header>
         <nav>
             <a href="index.html">Home</a>
-            <a href="extracurriculars.html">Extracurriculars</a>
-            <a href="projects.html">Projects</a>
             <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="extracurriculars.html">Extracurriculars</a>
         </nav>
-        <h2>Extracurricular Activities</h2>
+        <h1>EXTRACURRICULAR ACTIVITIES</h1>
     </header>
     <main>
         <div class="section" id="music">
