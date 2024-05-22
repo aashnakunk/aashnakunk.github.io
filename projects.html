@@ -17,18 +17,23 @@
             background: #0E447D;
             display: flex;
             justify-content: center;
+            align-items: center;
+            padding: 1em 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 0.5em 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             z-index: 1000;
+        }
+        nav .menu {
+            display: flex;
+            flex-wrap: wrap;
         }
         nav a {
             text-decoration: none;
             color: #ffffff;
             padding: 1em;
-            margin: 0;
+            margin: 0 0.5em;
             transition: background-color 0.3s;
         }
         nav a:hover {
@@ -39,14 +44,22 @@
             color: white;
             margin: 0 0.5em;
         }
-        h1 {
-            font-size: 1.5em;
-            margin: 1em 0;
-            font-family: 'Arial', sans-serif;
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            align-items: center;
+            margin-right: 0.5em;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
         }
         .projects-section {
             padding: 2em;
-            padding-top: 4em; /* Adjust for fixed nav */
+            padding-top: 6em; /* Adjust for fixed nav */
         }
         .projects-section h2 {
             color: #203094;
@@ -129,16 +142,54 @@
                 margin: 1em 0;
                 max-width: 90%;
             }
+            nav .menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                background: #0E447D;
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            nav .menu a {
+                padding: 1em;
+                margin: 0.5em 0;
+                width: 100%;
+                text-align: center;
+            }
+            .hamburger {
+                display: flex;
+                flex-direction: row;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hamburger span {
+                color: white;
+                margin-left: 0.5em;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="extracurriculars.html">Extracurriculars</a>
-        <a href="contact.html">Contact</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <span>Menu</span>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="extracurriculars.html">Extracurriculars</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
     <main>
         <div class="projects-section">
@@ -188,5 +239,11 @@
             </div>
         </div>
     </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </body>
 </html>
