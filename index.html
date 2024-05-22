@@ -25,29 +25,31 @@
         .timeline {
             padding: 2em;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
         }
         .event {
             position: relative;
-            width: 300px;
-            margin: 2em 0;
+            width: 200px;
+            height: 100px;
+            margin: 1em;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s;
         }
-        .event:hover .tooltip {
-            visibility: visible;
+        .event:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
         }
-        .tooltip {
-            visibility: hidden;
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
+        .event a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -66,36 +68,28 @@
     <main>
         <div class="timeline">
             <div class="event">
-                <div class="tooltip">Teaching Assistantship for Database Systems course</div>
-                <p>2024 Sept</p>
+                <a href="experience.html#teaching_assistantship">Teaching Assistantship for Database Systems course</a>
             </div>
             <div class="event">
-                <div class="tooltip">Embedded Internship at L&T Technologies Ltd</div>
-                <p>2024 May</p>
+                <a href="experience.html#embedded_internship">Embedded Internship at L&T Technologies Ltd</a>
             </div>
             <div class="event">
-                <div class="tooltip">Teaching Assistant for CS1122 course</div>
-                <p>2024 Jan</p>
+                <a href="experience.html#teaching_assistant">Teaching Assistant for CS1122 course</a>
             </div>
             <div class="event">
-                <div class="tooltip">Masters in Computer Engineering at NYU Tandon School of Engineering</div>
-                <p>2023 Sept</p>
+                <a href="experience.html#masters_degree">Masters in Computer Engineering at NYU Tandon School of Engineering</a>
             </div>
             <div class="event">
-                <div class="tooltip">Nutanix Internship</div>
-                <p>2023 Jan - June</p>
+                <a href="experience.html#nutanix_internship">Nutanix Internship</a>
             </div>
             <div class="event">
-                <div class="tooltip">Data Science Internship at Invenger Technologies</div>
-                <p>2022 May - July</p>
+                <a href="experience.html#data_science_internship">Data Science Internship at Invenger Technologies</a>
             </div>
             <div class="event">
-                <div class="tooltip">Internship at Siemens Ltd. in Computer Vision</div>
-                <p>2021 July - August</p>
+                <a href="experience.html#siemens_internship">Internship at Siemens Ltd. in Computer Vision</a>
             </div>
             <div class="event">
-                <div class="tooltip">Undergrad in CSE from Manipal Institute of Technology</div>
-                <p>2019-2023</p>
+                <a href="experience.html#undergrad_cse">Undergrad in CSE from Manipal Institute of Technology</a>
             </div>
         </div>
     </main>
