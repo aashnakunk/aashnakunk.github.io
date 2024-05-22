@@ -3,41 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Aashna Nitin Kunkolienker - Projects</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: Garamond, Georgia, serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
         }
         header {
-            background-color: #333;
-            color: white;
-            padding: 1em 0;
+            background: linear-gradient(to right, #203094, #a5b3f3);
+            color: #ffffff;
+            padding: 2em 0;
         }
-        nav a {
-            margin: 0 1em;
-            color: white;
-            text-decoration: none;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        main {
+        .projects-section {
             padding: 2em;
+        }
+        .projects-section h2 {
+            color: #203094;
+        }
+        .projects-section .project {
+            margin: 1em 0;
+        }
+        .projects-section .project a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #203094;
+            padding: 1em 2em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .projects-section .project a:hover {
+            background-color: #4056a1;
+        }
+        .github-link {
+            margin-top: 2em;
+            text-align: center;
+        }
+        .github-link img {
+            width: 100px;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Projects</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="extracurriculars.html">Extracurriculars</a>
-        </nav>
     </header>
     <main>
-        <p>Here are some of my projects.</p>
+        <div class="projects-section">
+            <h2>TOP PROJECTS</h2>
+            <div class="project">
+                <a href="https://github.com/aashnakunk/GAN_VIX" target="_blank">GAN VIX</a>
+            </div>
+            <div class="project">
+                <a href="https://github.com/aashnakunk/STM32_Parkinsons_tremor_detector" target="_blank">STM32 Parkinson's Tremor Detector</a>
+            </div>
+            <div class="project">
+                <a href="https://github.com/aashnakunk/Pipelined_processor_FiveStage" target="_blank">Pipelined Processor (Five Stage)</a>
+            </div>
+            <div class="github-link">
+                <p>Check out more projects on my GitHub:</p>
+                <a href="https://github.com/aashnakunk" target="_blank">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+                </a>
+            </div>
+        </div>
     </main>
 </body>
 </html>
