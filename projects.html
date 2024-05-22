@@ -73,9 +73,12 @@
         .project-title {
             font-weight: bold;
             margin-bottom: 1em;
+            color: #000000;
         }
         .project-description {
             margin-bottom: 1em;
+            color: #102C49;
+            font-weight: normal;
         }
         .project-link {
             text-decoration: none;
@@ -123,6 +126,8 @@
         @media (max-width: 768px) {
             .top-project {
                 width: 100%;
+                margin: 1em 0;
+                max-width: 90%;
             }
         }
     </style>
@@ -137,10 +142,10 @@
     </nav>
     <main>
         <div class="projects-section">
-            <h2>Key projects</h2>
+            <h2>Key Projects</h2>
             <div class="top-projects">
                 <div class="top-project">
-                    <div class="project-title">Using GANs to generate CBOE volatility index values </div>
+                    <div class="project-title">Using GANs to generate CBOE volatility index values</div>
                     <div class="project-description">
                         This study compares several GAN architectures—LinGAN, ResNetGAN, Attention GAN, Vanilla GAN, CGAN, and WGAN in their ability to replicate the nuanced distribution and temporal properties of the VIX Index, known for its Gaussian nature interspersed with random spikes.
                     </div>
@@ -149,7 +154,8 @@
                 <div class="top-project">
                     <div class="project-title">Real-time Parkinson's Tremor detection system</div>
                     <div class="project-description">
-                    Built a wearable device using the STM32F429ZI board to detect Parkinsonian tremors in real-time through gyroscope data analysis and RMS calculations. The system features real-time feedback, data logging, and user interaction via an LCD display and push button.                    </div>
+                        Built a wearable device using the STM32F429ZI board to detect Parkinsonian tremors in real-time through gyroscope data analysis and RMS calculations. The system features real-time feedback, data logging, and user interaction via an LCD display and push button.
+                    </div>
                     <a class="project-link" href="https://github.com/aashnakunk/STM32_Parkinsons_tremor_detector" target="_blank">View on GitHub</a>
                 </div>
                 <div class="top-project">
@@ -162,7 +168,7 @@
             </div>
             <div class="separator"></div>
             <div class="other-projects">
-                <h2>OTHER PROJECTS</h2>
+                <h2>Other Projects</h2>
                 <a href="https://github.com/aashnakunk/Multithreading_XOR" target="_blank">Finding the XOR value of file contents using pthreads</a>
                 <a href="https://github.com/aashnakunk/Movie_review_Analyzer" target="_blank">Movie review analyser using Transformers</a>
                 <a href="https://github.com/aashnakunk/mutex-and-spinlocks" target="_blank">Comparative study: Mutexes and spinlocks</a>
