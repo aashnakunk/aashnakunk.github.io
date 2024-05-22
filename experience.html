@@ -12,21 +12,15 @@
             background-color: #f0f4f8;
             color: #333;
         }
-        header {
-            background: linear-gradient(to right, #203094, #a5b3f3);
-            color: #ffffff;
-            padding: 1em 0;
-            position: relative;
-        }
         nav {
             background: #0E447D;
             display: flex;
             justify-content: center;
-            position: absolute;
-            top: 0;
-            width: 100%;
             padding: 0.5em 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
         }
         nav a {
             text-decoration: none;
@@ -43,9 +37,9 @@
             color: white;
             margin: 0 0.5em;
         }
- 
         .experience-section {
             padding: 2em;
+            padding-top: 4em; /* Adjust for fixed nav */
         }
         .experience-section h2 {
             color: #203094;
@@ -74,18 +68,15 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience</a>
-            <a href="projects.html">Projects</a>
-            <a href="extracurriculars.html">Extracurriculars</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="extracurriculars.html">Extracurriculars</a>
+        <a href="contact.html">Contact</a>
+    </nav>
     <main>
-
-                <div class="separator"></div>
+        <div class="separator"></div>
         <div class="experience-section" id="embedded_internship">
             <h2>Embedded Internship at L&T Technologies Ltd</h2>
             <p>
@@ -93,7 +84,7 @@
                 Worked on developing embedded systems software for various clients, focusing on real-time data processing and hardware-software integration.
             </p>
         </div>
-               <div class="separator"></div>
+        <div class="separator"></div>
         <div class="experience-section" id="nutanix_internship">
             <h2>Nutanix - Systems Reliability Engineer intern</h2>
             <p>
@@ -101,7 +92,7 @@
                 Interned at Nutanix, contributing to the development of cloud infrastructure solutions, improving system performance, and enhancing user experience.
             </p>
         </div>
-                <div class="separator"></div>
+        <div class="separator"></div>
         <div class="experience-section" id="siemens_internship">
             <h2>Siemens Ltd - Computer Vision Intern</h2>
             <p>
@@ -109,14 +100,14 @@
                 Worked on computer vision projects, developing algorithms for image processing and pattern recognition, and integrating solutions into industrial applications.
             </p>
         </div>
+        <div class="separator"></div>
         <div class="experience-section" id="teaching_assistantship">
-            <h2>Upcoming Teaching Assistant for CS3083 - Database Systems </h2>
+            <h2>Upcoming Teaching Assistant for CS3083 - Database Systems</h2>
             <p>
                 <img src="logo3.png.png" alt="Logo">
                 Assisted professors in grading assignments and exams, conducted lab sessions, and provided additional tutoring for students needing extra help.
             </p>
         </div>
-
         <div class="separator"></div>
         <div class="experience-section" id="teaching_assistant">
             <h2>Teaching Assistant for CS1122 - Introduction to Computer Science and Programming</h2>
@@ -125,7 +116,6 @@
                 Supported course delivery by leading discussion sections, managing course materials, and helping students with course content and projects.
             </p>
         </div>
- 
         <div class="separator"></div>
         <div class="experience-section" id="data_science_internship">
             <h2>Invenger Technologies - Data Science Intern</h2>
@@ -134,7 +124,6 @@
                 Engaged in data analysis and machine learning projects, leveraging data science techniques to derive insights and support decision-making processes.
             </p>
         </div>
-
     </main>
 </body>
 </html>
