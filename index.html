@@ -16,53 +16,50 @@
         header {
             background: linear-gradient(to right, #203094, #a5b3f3);
             color: #ffffff;
-            padding: 2em 0;
+            padding: 1em 0;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2em;
+            font-weight: normal;
+        }
+        header p {
+            margin: 0.5em 0;
         }
         nav a {
             color: #ffffff;
             margin: 0 1em;
             text-decoration: none;
         }
-        .timeline {
+        .intro {
             padding: 2em;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
         }
-        .event {
-            position: relative;
+        .intro img {
+            border-radius: 50%;
             width: 150px;
-            height: 80px;
+            height: 150px;
+        }
+        .buttons {
+            margin-top: 2em;
+        }
+        .buttons a {
+            background-color: #203094;
+            color: #ffffff;
+            padding: 1em 2em;
             margin: 1em;
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-decoration: none;
+            border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
         }
-        .event:hover {
-            background-color: rgba(255, 255, 255, 0.8);
+        .buttons a:hover {
+            background-color: #a5b3f3;
             transform: scale(1.05);
-            cursor: pointer;
-        }
-        .event a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            pointer-events: none;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Aashna Nitin Kunkolienker</h1>
-        <p>Introduction: A meticulous Computer Science student with moderate experience in optimization projects and a keen interest in computational intelligence.</p>
         <p>Email: <a href="mailto:aashnakunk@gmail.com" style="color: #ffffff;">aashnakunk@gmail.com</a></p>
         <p><a href="resume.html" style="color: #ffffff; text-decoration: underline;">VIEW RESUME</a></p>
         <nav>
@@ -73,31 +70,14 @@
         </nav>
     </header>
     <main>
-        <div class="timeline">
-            <div class="event">
-                <a href="experience.html#teaching_assistantship">Teaching Assistantship for Database Systems course</a>
-            </div>
-            <div class="event">
-                <a href="experience.html#embedded_internship">Embedded Internship at L&T Technologies Ltd</a>
-            </div>
-            <div class="event">
-                <a href="experience.html#teaching_assistant">Teaching Assistant for CS1122 course</a>
-            </div>
-            <div class="event">
-                <a href="experience.html#masters_degree">Masters in Computer Engineering at NYU Tandon School of Engineering</a>
-            </div>
-            <div class="event">
-                <a href="experience.html#nutanix_internship">Nutanix Internship</a>
-            </div>
-            <div class="event">
-                <a href="experience.html#data_science_internship">Data Science Internship at Invenger Technologies</a>
-            </div>
-            <div class="event">
-                <a href="experience.html#siemens_internship">Internship at Siemens Ltd. in Computer Vision</a>
-            </div>
-            <div class="event">
-                <a href="experience.html#undergrad_cse">Undergrad in CSE from Manipal Institute of Technology</a>
-            </div>
+        <div class="intro">
+            <img src="path/to/your/photo.jpg" alt="Aashna Nitin Kunkolienker">
+            <p>Hello! I am Aashna Nitin Kunkolienker, a meticulous Computer Science student with a passion for optimization projects and computational intelligence. With a background in networking, web development, and machine learning, I am keen to apply my skills in solving real-world challenges. Currently pursuing my Master's in Computer Engineering at NYU Tandon School of Engineering, I have completed various internships and projects that have honed my technical and analytical skills.</p>
+        </div>
+        <div class="buttons">
+            <a href="experience.html">Work Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="extracurriculars.html">Extracurriculars</a>
         </div>
     </main>
 </body>
