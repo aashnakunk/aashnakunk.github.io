@@ -38,15 +38,25 @@
         .contact-section {
             padding: 2em;
         }
-        .contact-section img {
+        .contact-item {
+            display: inline-block;
+            text-align: center;
+            margin: 1em;
+        }
+        .contact-item img {
             width: 50px;
             height: 50px;
-            margin: 1em;
+            margin: 0.5em;
+            border: 1px solid #000000;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
-        .contact-section img:hover {
+        .contact-item img:hover {
             transform: scale(1.1);
             cursor: pointer;
+        }
+        .contact-item p {
+            margin: 0;
         }
     </style>
 </head>
@@ -61,9 +71,13 @@
     <main>
         <div class="contact-section">
             <h1>Feel free to contact me!</h1>
-            <div>
+            <div class="contact-item">
                 <a href="mailto:aashnakunk@gmail.com"><img src="icongmail.png" alt="Email"></a>
+                <p>Email</p>
+            </div>
+            <div class="contact-item">
                 <a href="https://www.linkedin.com/in/aashnakunk" target="_blank"><img src="iconlinkedin.png" alt="LinkedIn"></a>
+                <p>Message on LinkedIn</p>
             </div>
         </div>
     </main>
