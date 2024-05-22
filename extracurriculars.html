@@ -3,41 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extracurriculars</title>
+    <title>Aashna Nitin Kunkolienker - Extracurriculars</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: Garamond, Georgia, serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
         }
         header {
-            background-color: #333;
-            color: white;
-            padding: 1em 0;
+            background: linear-gradient(to right, #203094, #a5b3f3);
+            color: #ffffff;
+            padding: 2em 0;
         }
-        nav a {
-            margin: 0 1em;
-            color: white;
-            text-decoration: none;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        main {
+        .section {
             padding: 2em;
+        }
+        .section h2 {
+            color: #203094;
+        }
+        .video {
+            display: inline-block;
+            margin: 1em;
+            transition: transform 0.3s;
+        }
+        .video:hover {
+            transform: scale(1.05);
+        }
+        .video img {
+            width: 320px;
+            height: 180px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .view-channel {
+            display: block;
+            margin: 2em auto;
+            padding: 1em 2em;
+            color: #ffffff;
+            background-color: #203094;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .view-channel:hover {
+            background-color: #4056a1;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Extracurriculars</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="extracurriculars.html">Extracurriculars</a>
-        </nav>
     </header>
     <main>
-        <p>Here are some of my extracurricular activities.</p>
+        <div class="section" id="music">
+            <h2>MUSIC</h2>
+            <div class="video">
+        
+                <a href="https://www.youtube.com/watch?v=SsYHKzyvtL8" target="_blank">
+                    <img src="https://img.youtube.com/watch?v=SsYHKzyvtL8.jpg" alt="Interstellar Theme Piano Cover">
+                </a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=37pf9bA101s" target="_blank">
+                    <img src="https://img.youtube.com/watch?v=37pf9bA101s.jpg" alt="GOAT - Polyphia Piano Cover">
+                </a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=etfPGi6Ohcc" target="_blank">
+                    <img src="https://www.youtube.com/watch?v=etfPGi6Ohcc" alt="Nightingale Flute Cover">
+                </a>
+            </div>
+            <a class="view-channel" href="https://www.youtube.com/channel/UCK0wt0AS7GmX6WnMOQLnkLg" target="_blank">VIEW CHANNEL ON YOUTUBE</a>
+        </div>
+        <div class="section" id="others">
+            <h2>OTHERS</h2>
+            <p>Describe other extracurricular activities here.</p>
+        </div>
     </main>
 </body>
 </html>
