@@ -7,61 +7,108 @@
     <style>
         body {
             font-family: Garamond, Georgia, serif;
-            text-align: center;
             margin: 0;
             padding: 0;
             background-color: #f0f4f8;
             color: #333;
         }
         header {
-            background: linear-gradient(to right, #203094, #a5b3f3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #2e0854;
             color: #ffffff;
-            padding: 1em 0;
+            padding: 1em 2em;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            font-weight: normal;
-        }
-        header p {
-            margin: 0.5em 0;
+        nav {
+            display: flex;
+            justify-content: center;
         }
         nav a {
-            color: #ffffff;
-            margin: 0 1em;
             text-decoration: none;
+            color: #ffffff;
+            padding: 1em;
+            margin: 0 0.5em;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4b0082;
+        }
+        nav a:not(:last-child)::after {
+            content: "|";
+            color: white;
+            margin: 0 0.5em;
         }
         .intro {
+            display: flex;
+            align-items: center;
             padding: 2em;
         }
         .intro img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            margin-left: 2em;
         }
-        .buttons {
-            margin-top: 2em;
+        .intro-text {
+            flex: 1;
         }
-        .buttons a {
+        .intro-text h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        .intro-text p {
+            margin: 0.5em 0;
+        }
+        .section-title {
+            margin: 2em 0 1em;
+            border-bottom: 2px solid #6a0dad;
+            padding-bottom: 0.5em;
+        }
+        .companies, .projects, .skills {
+            text-align: center;
+        }
+        .companies img, .skills button {
+            margin: 0.5em;
+        }
+        .projects .project-link {
+            display: inline-block;
             background-color: #203094;
             color: #ffffff;
-            padding: 1em 2em;
+            padding: 0.5em 1em;
             margin: 1em;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
         }
-        .buttons a:hover {
-            background-color: #a5b3f3;
+        .projects .project-link:hover {
+            background-color: #4056a1;
             transform: scale(1.05);
+        }
+        .skills button {
+            background-color: #203094;
+            color: #ffffff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            margin: 0.5em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .skills button:hover {
+            background-color: #4056a1;
+            transform: scale(1.05);
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Aashna Nitin Kunkolienker</h1>
-        <p>Email: <a href="mailto:aashnakunk@gmail.com" style="color: #ffffff;">aashnakunk@gmail.com</a></p>
-        <p><a href="resume.html" style="color: #ffffff; text-decoration: underline;">VIEW RESUME</a></p>
+        <div class="intro-text">
+            <h1>Aashna Nitin Kunkolienker</h1>
+            <p>A meticulous Computer Science student with a passion for optimization projects and computational intelligence.</p>
+            <p>Currently pursuing a Master's in Computer Engineering at NYU Tandon School of Engineering.</p>
+        </div>
+        <img src="photo.png" alt="Aashna Nitin Kunkolienker">
         <nav>
             <a href="index.html">Home</a>
             <a href="experience.html">Experience</a>
@@ -70,14 +117,30 @@
         </nav>
     </header>
     <main>
-        <div class="intro">
-            <img src="photo.png" alt="Aashna Nitin Kunkolienker">
-            <p>  Being a meticulous Computer Science student with a passion for optimization projects and computational intelligence. With a background in networking, web development, and machine learning, I am keen to apply my skills in solving real-world challenges. Currently pursuing my Master's in Computer Engineering at NYU Tandon School of Engineering, I have completed various internships and projects that have honed my technical and analytical skills.</p>
+        <div class="section-title">Companies I've Worked At</div>
+        <div class="companies">
+            <img src="logo1.jpg" alt="Company 1 Logo" width="100" height="100">
+            <img src="logo2.png" alt="Company 2 Logo" width="100" height="100">
+            <img src="logo3.png" alt="Company 3 Logo" width="100" height="100">
+            <img src="logo4.png.jpg" alt="Company 4 Logo" width="100" height="100">
+            <img src="logo5.png" alt="Company 5 Logo" width="100" height="100">
         </div>
-        <div class="buttons">
-            <a href="experience.html">Work Experience</a>
-            <a href="projects.html">Projects</a>
-            <a href="extracurriculars.html">Extracurriculars</a>
+        <div class="section-title">Top Projects</div>
+        <div class="projects">
+            <a class="project-link" href="https://github.com/aashnakunk/GAN_VIX" target="_blank">GAN VIX</a>
+            <a class="project-link" href="https://github.com/aashnakunk/STM32_Parkinsons_tremor_detector" target="_blank">STM32 Parkinson's Tremor Detector</a>
+            <a class="project-link" href="https://github.com/aashnakunk/Pipelined_processor_FiveStage" target="_blank">Pipelined Processor (Five Stage)</a>
+        </div>
+        <div class="section-title">Skills</div>
+        <div class="skills">
+            <button>Networking</button>
+            <button>Web Development</button>
+            <button>Machine Learning</button>
+            <button>Optimization</button>
+            <button>Python</button>
+            <button>Embedded Systems</button>
+            <button>Data Science</button>
+            <button>Cloud Computing</button>
         </div>
     </main>
 </body>
