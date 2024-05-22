@@ -17,8 +17,8 @@
             display: flex;
             justify-content: center;
             padding: 1em 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1)
-            font-family: 'Times new Roman', Georgia, serif;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-family: 'Times New Roman', Georgia, serif;
         }
         nav a {
             text-decoration: none;
@@ -40,6 +40,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 2em;
+            flex-wrap: wrap;
         }
         .intro img {
             border-radius: 10px;
@@ -115,15 +116,19 @@
         .project-title {
             font-weight: bold;
             margin-bottom: 0.5em;
+            color: #000000; /* Black title */
         }
         .project-description {
             margin-bottom: 1em;
+            color: #000080; /* Dark blue writeup */
+            font-weight: 300; /* Thin font weight */
         }
         .skills {
             text-align: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            font-family: Garamond, Georgia, serif;
         }
         .skills button {
             background-color: #377DC4;
@@ -134,9 +139,15 @@
             margin: 0.3em;
             transition: background-color 0.3s, transform 0.3s;
             font-size: 0.9em;
+            font-family: Garamond, Georgia, serif;
         }
-     
-            .languages-and-frameworks button {
+        .languages-and-frameworks {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .languages-and-frameworks button {
             background-color: #377DC4;
             color: #ffffff;
             padding: 0.3em 0.8em;
@@ -146,7 +157,26 @@
             transition: background-color 0.3s, transform 0.3s;
             font-size: 0.9em;
         }
- 
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+                align-items: center;
+            }
+            .intro img {
+                margin-bottom: 1em;
+            }
+            .intro-text {
+                max-width: 100%;
+                text-align: center;
+            }
+            .top-projects, .projects, .skills, .languages-and-frameworks {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -174,7 +204,7 @@
         <div class="companies">
             <img src="logo1.jpg" alt="Company 1 Logo">
             <img src="logo2.png" alt="Company 2 Logo">
-            <img src="logo3.png" alt="Company 3 Logo">
+            <img src="logo3.png.png" alt="Company 3 Logo">
             <img src="logo4.png.jpg" alt="Company 4 Logo">
             <img src="logo5.png" alt="Company 5 Logo">
         </div>
@@ -205,9 +235,8 @@
             <button>Embedded systems</button>
             <button>Cloud Computing</button>
             <button>AWS services</button>
-
         </div>
-            <div class="section-title">Languages and Frameworks</div>
+        <div class="section-title">Languages and Frameworks</div>
         <div class="languages-and-frameworks">
             <button>Python</button>
             <button>C</button>
@@ -223,11 +252,6 @@
             <button>Arduino</button>
             <button>Django</button>
             <button>React JS</button>
-
-
-
-            
-
         </div>
     </main>
 </body>
