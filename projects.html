@@ -16,11 +16,38 @@
         header {
             background: linear-gradient(to right, #203094, #a5b3f3);
             color: #ffffff;
-            padding: 2em 0;
+            padding: 1em 0;
+            position: relative;
         }
-        header h1 {
+        nav {
+            background: #2e0854;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 0.5em 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 1em;
             margin: 0;
-            font-size: 2.5em;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4b0082;
+        }
+        nav a:not(:last-child)::after {
+            content: "|";
+            color: white;
+            margin: 0 0.5em;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin: 1em 0;
+            font-family: 'Arial', sans-serif;
         }
         .projects-section {
             padding: 2em;
@@ -31,15 +58,18 @@
         .top-projects {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin-bottom: 2em;
         }
         .top-project {
-            width: 30%;
+            width: 100%;
+            max-width: 30%;
             background: #ffffff;
             padding: 1em;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             transition: transform 0.3s;
+            margin: 1em 0.5em;
         }
         .top-project:hover {
             transform: scale(1.05);
@@ -86,11 +116,22 @@
             width: 100px;
             height: auto;
         }
+        @media (max-width: 768px) {
+            .top-project {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Projects</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="extracurriculars.html">Extracurriculars</a>
+        </nav>
+        <h1>PROJECTS</h1>
     </header>
     <main>
         <div class="projects-section">
