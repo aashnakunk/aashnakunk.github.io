@@ -22,45 +22,32 @@
             margin: 0;
             font-size: 2.5em;
         }
-        header p {
-            font-size: 1.2em;
-            margin: 0.5em 0;
-        }
-        nav {
-            margin: 2em 0;
-        }
-        nav a {
-            margin: 0 1em;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
+        .timeline {
             padding: 2em;
-        }
-        .projects {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
         }
-        .project {
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 10px;
-            padding: 1em;
-            margin: 1em;
+        .event {
+            position: relative;
             width: 300px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            backdrop-filter: blur(10px);
+            margin: 2em 0;
         }
-        .project:hover {
-            transform: scale(1.05);
+        .event:hover .tooltip {
+            visibility: visible;
         }
-        .project a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
+        .tooltip {
+            visibility: hidden;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
         }
     </style>
 </head>
@@ -77,19 +64,38 @@
         </nav>
     </header>
     <main>
-        <h2>Top Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3><a href="https://github.com/aashnakunk/GAN_VIX" target="_blank">GAN VIX</a></h3>
-                <p>Generative Adversarial Networks for VIX time series prediction.</p>
+        <div class="timeline">
+            <div class="event">
+                <div class="tooltip">Teaching Assistantship for Database Systems course</div>
+                <p>2024 Sept</p>
             </div>
-            <div class="project">
-                <h3><a href="https://github.com/aashnakunk/STM32_Parkinsons_tremor_detector" target="_blank">STM32 Parkinson's Tremor Detector</a></h3>
-                <p>A wearable device to detect Parkinsonian tremors using an STM32 microcontroller.</p>
+            <div class="event">
+                <div class="tooltip">Embedded Internship at L&T Technologies Ltd</div>
+                <p>2024 May</p>
             </div>
-            <div class="project">
-                <h3><a href="https://github.com/aashnakunk/Pipelined_processor_FiveStage" target="_blank">Pipelined Processor (Five Stage)</a></h3>
-                <p>A simulation of a five-stage pipelined processor to improve instruction throughput.</p>
+            <div class="event">
+                <div class="tooltip">Teaching Assistant for CS1122 course</div>
+                <p>2024 Jan</p>
+            </div>
+            <div class="event">
+                <div class="tooltip">Masters in Computer Engineering at NYU Tandon School of Engineering</div>
+                <p>2023 Sept</p>
+            </div>
+            <div class="event">
+                <div class="tooltip">Nutanix Internship</div>
+                <p>2023 Jan - June</p>
+            </div>
+            <div class="event">
+                <div class="tooltip">Data Science Internship at Invenger Technologies</div>
+                <p>2022 May - July</p>
+            </div>
+            <div class="event">
+                <div class="tooltip">Internship at Siemens Ltd. in Computer Vision</div>
+                <p>2021 July - August</p>
+            </div>
+            <div class="event">
+                <div class="tooltip">Undergrad in CSE from Manipal Institute of Technology</div>
+                <p>2019-2023</p>
             </div>
         </div>
     </main>
