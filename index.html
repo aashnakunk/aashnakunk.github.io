@@ -12,22 +12,11 @@
             background-color: #f0f4f8;
             color: #333;
         }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #2e0854;
-            color: #ffffff;
-            padding: 1em 2em;
-        }
         nav {
+            background: #2e0854;
             display: flex;
             justify-content: center;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            padding: 0.5em 0;
-            background: #2e0854;
+            padding: 1em 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         nav a {
@@ -48,18 +37,16 @@
         .intro {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding: 4em 2em;
+            justify-content: space-between;
+            padding: 2em;
         }
         .intro img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-left: 2em;
+            border-radius: 10px;
+            width: 300px;
+            height: auto;
         }
         .intro-text {
-            flex: 1;
-            max-width: 600px;
+            max-width: 50%;
             text-align: left;
         }
         .intro-text h1 {
@@ -74,12 +61,15 @@
             border-bottom: 2px solid #6a0dad;
             padding-bottom: 0.5em;
             text-align: center;
+            font-size: 1.5em;
         }
         .companies, .projects, .skills {
             text-align: center;
         }
         .companies img, .skills button {
             margin: 0.5em;
+            width: 100px;
+            height: 100px;
         }
         .projects .project-link {
             display: inline-block;
@@ -112,14 +102,6 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="intro-text">
-            <h1>Aashna Nitin Kunkolienker</h1>
-            <p>A meticulous Computer Science student with a passion for optimization projects and computational intelligence.</p>
-            <p>Currently pursuing a Master's in Computer Engineering at NYU Tandon School of Engineering.</p>
-        </div>
-        <img src="photo.png" alt="Aashna Nitin Kunkolienker" style="width: 100px; height: 100px;">
-    </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="experience.html">Experience</a>
@@ -127,13 +109,22 @@
         <a href="extracurriculars.html">Extracurriculars</a>
     </nav>
     <main>
+        <div class="intro">
+            <div class="intro-text">
+                <h1>Aashna Nitin Kunkolienker</h1>
+                <p>A meticulous Computer Science student with a passion for optimization projects and computational intelligence.</p>
+                <p>Currently pursuing a Master's in Computer Engineering at NYU Tandon School of Engineering.</p>
+                <p>With a background in networking, web development, and machine learning, I am keen to apply my skills in solving real-world challenges.</p>
+            </div>
+            <img src="photo.png" alt="Aashna Nitin Kunkolienker">
+        </div>
         <div class="section-title">Companies I've Worked At</div>
         <div class="companies">
-            <img src="logo1.jpg" alt="Company 1 Logo" width="100" height="100">
-            <img src="logo2.png" alt="Company 2 Logo" width="100" height="100">
-            <img src="logo3.png" alt="Company 3 Logo" width="100" height="100">
-            <img src="logo4.png.jpg" alt="Company 4 Logo" width="100" height="100">
-            <img src="logo5.png" alt="Company 5 Logo" width="100" height="100">
+            <img src="logo1.jpg" alt="Company 1 Logo">
+            <img src="logo2.png" alt="Company 2 Logo">
+            <img src="logo3.png" alt="Company 3 Logo">
+            <img src="logo4.png.jpg" alt="Company 4 Logo">
+            <img src="logo5.png" alt="Company 5 Logo">
         </div>
         <div class="section-title">Top Projects</div>
         <div class="projects">
