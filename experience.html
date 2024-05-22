@@ -1,44 +1,93 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extracurriculars</title>
+    <title>Experience</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Garamond, Georgia, serif;
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
+            color: #333;
         }
         header {
-            background-color: #333;
-            color: white;
-            padding: 1em 0;
+            background: linear-gradient(to right, #203094, #a5b3f3);
+            color: #ffffff;
+            padding: 2em 0;
         }
-        nav a {
-            margin: 0 1em;
-            color: white;
-            text-decoration: none;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        main {
+        .timeline {
             padding: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .event {
+            position: relative;
+            width: 300px;
+            margin: 2em 0;
+        }
+        .event:hover .tooltip {
+            visibility: visible;
+        }
+        .tooltip {
+            visibility: hidden;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Extracurriculars</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="extracurriculars.html">Extracurriculars</a>
-        </nav>
+        <h1>Work Experience</h1>
     </header>
-    <main>
-        <p>WORK EXPERIENCE.</p>
-    </main>
+    <div class="timeline">
+        <div class="event">
+            <div class="tooltip">Teaching Assistantship for Database Systems course</div>
+            <p>2024 Sept</p>
+        </div>
+        <div class="event">
+            <div class="tooltip">Embedded Internship at L&T Technologies Ltd</div>
+            <p>2024 May</p>
+        </div>
+        <div class="event">
+            <div class="tooltip">Teaching Assistant for CS1122 course</div>
+            <p>2024 Jan</p>
+        </div>
+        <div class="event">
+            <div class="tooltip">Masters in Computer Engineering at NYU Tandon School of Engineering</div>
+            <p>2023 Sept</p>
+        </div>
+        <div class="event">
+            <div class="tooltip">Nutanix Internship</div>
+            <p>2023 Jan - June</p>
+        </div>
+        <div class="event">
+            <div class="tooltip">Data Science Internship at Invenger Technologies</div>
+            <p>2022 May - July</p>
+        </div>
+        <div class="event">
+            <div class="tooltip">Internship at Siemens Ltd. in Computer Vision</div>
+            <p>2021 July - August</p>
+        </div>
+        <div class="event">
+            <div class="tooltip">Undergrad in CSE from Manipal Institute of Technology</div>
+            <p>2019-2023</p>
+        </div>
+    </div>
 </body>
 </html>
