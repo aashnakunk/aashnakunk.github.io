@@ -22,6 +22,11 @@
             margin: 0;
             font-size: 2.5em;
         }
+        nav a {
+            color: #ffffff;
+            margin: 0 1em;
+            text-decoration: none;
+        }
         .timeline {
             padding: 2em;
             display: flex;
@@ -31,18 +36,19 @@
         }
         .event {
             position: relative;
-            width: 200px;
-            height: 100px;
+            width: 150px;
+            height: 80px;
             margin: 1em;
             background-color: rgba(255, 255, 255, 0.5);
             border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
         .event:hover {
             background-color: rgba(255, 255, 255, 0.8);
+            transform: scale(1.05);
             cursor: pointer;
         }
         .event a {
@@ -58,6 +64,7 @@
         <h1>Aashna Nitin Kunkolienker</h1>
         <p>Introduction: A meticulous Computer Science student with moderate experience in optimization projects and a keen interest in computational intelligence.</p>
         <p>Email: <a href="mailto:aashnakunk@gmail.com" style="color: #ffffff;">aashnakunk@gmail.com</a></p>
+        <p><a href="resume.html" style="color: #ffffff; text-decoration: underline;">VIEW RESUME</a></p>
         <nav>
             <a href="index.html">Home</a>
             <a href="experience.html">Experience</a>
