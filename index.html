@@ -13,7 +13,7 @@
             color: #333;
         }
         nav {
-            background:  #0E447D;
+            background: #0E447D;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,6 +45,8 @@
             display: none;
             flex-direction: column;
             cursor: pointer;
+            align-items: center;
+            margin-right: 0.5em;
         }
         .hamburger div {
             width: 25px;
@@ -211,8 +213,17 @@
             }
             .hamburger {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 cursor: pointer;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hamburger span {
+                color: white;
+                margin-left: 0.5em;
+                font-size: 1em;
             }
         }
     </style>
@@ -223,6 +234,7 @@
             <div></div>
             <div></div>
             <div></div>
+            <span>Menu</span>
         </div>
         <div class="menu">
             <a href="index.html">Home</a>
