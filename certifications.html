@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashna Nitin Kunkolienker - Certifications</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
+        }
+        nav {
+            background: #0E447D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1em 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav .menu {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 1em;
+            margin: 0 0.5em;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #477BB1;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            align-items: center;
+            margin-right: 0.5em;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+        .certifications-section {
+            padding: 2em;
+            padding-top: 6em; /* Adjust for fixed nav */
+            margin: 0 auto;
+            max-width: 900px;
+        }
+        .certifications-section h2 {
+            color: #203094;
+        }
+        .certification-card {
+            background: #ffffff;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin: 1em 0;
+        }
+        .certification-card:hover {
+            transform: scale(1.05);
+        }
+        .certification-title {
+            font-weight: bold;
+            color: #203094;
+        }
+        .certification-description {
+            color: #102C49;
+            margin: 1em 0;
+            font-weight: normal;
+        }
+        .certification-image {
+            margin: 1em 0;
+        }
+        .certification-image img {
+            width: 300px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .github-link {
+            margin-top: 2em;
+            text-align: center;
+        }
+        .github-link img {
+            width: 100px;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .certification-card {
+                width: 100%;
+                margin: 1em 0;
+                max-width: 90%;
+            }
+            nav .menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                background: #0E447D;
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            nav .menu a {
+                padding: 1em;
+                margin: 0.5em 0;
+                width: 100%;
+                text-align: center;
+            }
+            .hamburger {
+                display: flex;
+                flex-direction: row;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hamburger span {
+                color: white;
+                margin-left: 0.5em;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span>Menu</span>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="projects.html">Projects</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="extracurriculars.html">Extracurriculars</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <div class="certifications-section">
+            <h2>Certifications</h2>
+            <div class="certification-card">
+                <div class="certification-title">AWS Certified Solutions Architect - Associate</div>
+                <div class="certification-description">
+                    The AWS Solutions Architect certification demonstrates the ability to design and deploy scalable, fault-tolerant systems on AWS. This certification includes in-depth knowledge of cloud architecture and AWS services such as EC2, S3, RDS, VPC, and IAM.
+                </div>
+                <div class="certification-image">
+                    <!-- Replace 'aws_cert.png' with your AWS certificate image -->
+                    <img src="images/aws_cert.png" alt="AWS Certification">
+                </div>
+            </div>
+            <div class="certification-card">
+                <div class="certification-title">Cisco Certified Network Associate (CCNA)</div>
+                <div class="certification-description">
+                    The CCNA certification validates the ability to install, configure, and troubleshoot networks using Cisco devices. The certification covers topics such as routing and switching, IP addressing, network security, and troubleshooting methodologies.
+                </div>
+                <div class="certification-image">
+                    <!-- Replace 'ccna_cert.png' with your CCNA certificate image -->
+                    <img src="images/ccna_cert.png" alt="CCNA Certification">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>
